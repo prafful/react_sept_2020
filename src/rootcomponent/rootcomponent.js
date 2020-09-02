@@ -2,6 +2,7 @@ import React from 'react';
 import Review from '../components/review';
 import Header from '../components/header';
 import Footer from '../components/footer';
+import ReviewForm from '../components/reviewform';
 
 class RootComponent extends React.Component {
    
@@ -17,6 +18,9 @@ class RootComponent extends React.Component {
                   <Review mytitle='One X' desc='Premium from One!'>20</Review>
                   <Review mytitle='LG Dual Screen' desc='Get more from one!'>5</Review>
                   <Review mytitle='Note 10' desc='The old gaurd!!!!'>15</Review>
+                </div>
+                <div style={{backgroundColor:"lightcoral"}}>
+                    <ReviewForm></ReviewForm>
                 </div>
                 <div>
                     <Footer></Footer>
