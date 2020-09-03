@@ -2,6 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import RootComponent from "./rootcomponent/rootcomponent";
+import { HashRouter } from 'react-router-dom';
 
 
-ReactDOM.render(<RootComponent></RootComponent>, document.getElementById('root') )
+ReactDOM.render(
+    <HashRouter>
+        <RootComponent></RootComponent>
+    </HashRouter>
+    , 
+    
+    document.getElementById('root') )

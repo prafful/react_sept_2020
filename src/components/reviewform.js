@@ -24,14 +24,14 @@ class ReviewForm extends React.Component {
 
     render() { 
         return ( 
-            <div style={{padding:"5px", margin:'10px', border:'1px dashed red'}}>
+            <div style={{padding:"5px", margin:'10px', border:'1px dashed red' , backgroundColor:"lightcoral"}}>
                 Review form:
                 <br></br>
                 Title: <input type='text' onChange={this.getTitle}></input>
                 &nbsp;
                 <button disabled={this.state.buttonStatus}>Add</button>
-                {this.state.buttonStatus &&
-                    <span>Minimum length of title is 3!</span>
+                {
+                    this.state.buttonStatus &&  <span>Minimum length of title is 3!</span>
                 
                 }
    

@@ -1,0 +1,28 @@
+.menustyle{
+    color:'red';
+    padding:20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menuitem{
+    margin:10px;
+    background-color: thistle;
+    padding:5px;
+    border: 1px dashed pink;
+}
+
+.menuitem:hover{
+    margin:10px;
+    color:white;
+    background-color: violet;
+    padding:5px;
+    border: 1px dashed red;
+}
+
+@media all and (min-width:500px){
+    .menustyle{
+      flex-direction: row;
+    }
+    
+}
