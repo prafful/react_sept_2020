@@ -1,5 +1,5 @@
 import React from 'react';
-import Review from '../components/review';
+
 import Header from '../components/header';
 import Footer from '../components/footer';
 import Menu from '../components/menu/menu';

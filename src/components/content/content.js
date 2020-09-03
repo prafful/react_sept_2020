@@ -6,6 +6,7 @@ import Contact from '../contact';
 import Review from '../review';
 import ReviewForm from '../reviewform';
 import AllReview from '../allreview';
+import Users from '../remote/users';
 
 
 class Content extends React.Component {
@@ -19,6 +20,7 @@ class Content extends React.Component {
                 <Route path='/about' component={About}></Route>
                 <Route path='/review' component={AllReview}></Route>
                 <Route path='/add' component={ReviewForm}></Route>
+                <Route path='/users' component={Users}></Route>
             </Switch>
         );
     }
