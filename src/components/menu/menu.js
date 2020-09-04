@@ -13,11 +13,13 @@ class Menu extends React.Component {
                 &nbsp;
                 <Link to='/contact' className={mystyles.menuitem}>Contact</Link>
                 &nbsp;
-                <Link to='/review' className={mystyles.menuitem}>Review</Link>
+                <Link to='/review' className={mystyles.menuitem}>Static Review</Link>
                 &nbsp;
                 <Link to='/add' className={mystyles.menuitem}>Add Review</Link>
                 &nbsp;
                 <Link to='/users' className={mystyles.menuitem}>Users</Link>
+                &nbsp;
+                <Link to='/allreviews' className={mystyles.menuitem}>All Reviews</Link>
             </div>
          );
     }

@@ -1,6 +1,7 @@
 import React from 'react';
 
 import axios from "axios";
+import User from './user';
 
 
 class Users extends React.Component {
@@ -43,16 +44,16 @@ class Users extends React.Component {
     }
     
     renderAllUsers=()=>{
-        return this.state.allusers.map(user=>{
+        return this.state.allusers.map(eachuser=>{
             return(
-                <li key={user.id}>{user.name}</li>
+               <User key={eachuser.id} name={eachuser.name}></User>
             )
         })
     }
 
     render() { 
 
-        if(this.state.allusers.length == 0){
+        if(this.state.allusers.length === 0){
             return (  
                 <div>
                     List of users is being loaded ....
