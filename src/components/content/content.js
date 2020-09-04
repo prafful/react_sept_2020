@@ -8,6 +8,7 @@ import ReviewForm from '../reviewform';
 import AllReview from '../allreview';
 import Users from '../remote/users';
 import RemoteReview from '../remote/remotereviews';
+import EditReview from '../editreview';
 
 
 class Content extends React.Component {
@@ -23,6 +24,7 @@ class Content extends React.Component {
                 <Route path='/add' component={ReviewForm}></Route>
                 <Route path='/users' component={Users}></Route>
                 <Route path='/allreviews' component={RemoteReview}></Route>
+                <Route path='/editreview' component={EditReview}></Route>
             </Switch>
         );
     }

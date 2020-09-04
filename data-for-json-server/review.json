@@ -7,22 +7,10 @@
       "likes": 8
     },
     {
-      "id": 2,
-      "title": "LG Dual Screen Pro",
-      "description": "Prebooking needed!",
-      "likes": 10
-    },
-    {
-      "title": "OBBO Pro",
-      "description": "New in market!",
+      "title": "Check Pro",
+      "description": "owow",
       "likes": 0,
-      "id": 3
-    },
-    {
-      "title": "CAS Pro",
-      "description": "Cloud Phone",
-      "likes": 0,
-      "id": 4
+      "id": 2
     }
   ]
 }

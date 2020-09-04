@@ -7,7 +7,8 @@ class RemoteReview extends React.Component {
     constructor(props){
         super(props)
         this.state ={
-            reviews:[]
+            reviews:[],
+            myid:10
         }
     }
 
@@ -28,13 +29,38 @@ class RemoteReview extends React.Component {
                 })
     }
 
+    deleteReviewById=(id)=>{
+        console.log('Delete review with id (in parent): ' + id );
+        axios.delete('http://localhost:3000/reviews/'+id)
+                .then(response=>{
+                    console.log(response);
+                    console.log("deleted successfully~");
+                    this.loadAllReview()
+                })
+                .catch(err=>{
+                    console.log(err);
+                })
+    }
+
+    editReviewById=(id)=>{
+        console.log('Edit review with id (in parent): ' + id );
+        //this.setState({myid: id})
+        this.props.history.push({
+            pathname:'/editreview',
+            state: {myid:id}
+        })
+    }
+
     renderReviews=()=>{
         return this.state.reviews.map(r=>{
             return (
                 <Review key={r.id} 
+                        id={r.id}
                         title={r.title}
                         desc={r.description}
                         likes={r.likes}
+                        deleteReviewProp = {this.deleteReviewById}
+                        editReviewProp = { this.editReviewById}
                 ></Review>
             )
         })
